@@ -21,8 +21,13 @@ jQuery(function($) {
     })
 
     $('.about-items-item').on('click', function(){
-        $(".about-items-item img").removeClass("active");
-        $(this).children("img").addClass("active"); 
+        $(".hexagon").removeClass("active");
+        $(this).children(".hexagon").addClass("active"); 
+        
+    })
+    $('.clients-say-dots i').on('click', function(){
+        $(".clients-say-dots i").removeClass("active");
+        $(this).addClass("active"); 
         
     })
 })

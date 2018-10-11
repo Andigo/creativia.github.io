@@ -79,39 +79,27 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 45px;
+    background: url(../images/left.png) no-repeat;
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: 45px;
     left: auto;
-}
-.slick-prev:before
-{
-    content: '←';
-}
-[dir='rtl'] .slick-prev:before
-{
-    content: '→';
+    
 }
 
 .slick-next
 {
-    right: -25px;
+    right: 45px;
+    background: url(../images/right.png) no-repeat;
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: 45px;
 }
-.slick-next:before
-{
-    content: '→';
-}
-[dir='rtl'] .slick-next:before
-{
-    content: '←';
-}
+
 
 /* Dots */
 .slick-dotted.slick-slider
