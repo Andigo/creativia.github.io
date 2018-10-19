@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700,800');
 @import url('https://fonts.googleapis.com/css?family=Text+Me+One');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 @import url('https://fonts.googleapis.com/css?family=KoHo:400,500,700');
 .wrapper {
   max-width: 1400px;
@@ -40,7 +40,7 @@ button {
   outline: none;
 }
 .header {
-  height: auto;
+  min-height: 700px;
   position: relative;
   z-index: 100;
 }
@@ -975,6 +975,7 @@ button {
   -ms-flex-align: center;
   align-items: center;
   padding-top: 95px;
+  min-height: 1400px;
 }
 .teamwork h2 {
   font-family: 'Raleway', sans-serif;
@@ -996,5 +997,179 @@ button {
   color: #505050;
 }
 .teamwork h3 span {
+  color: #ff0036;
+}
+.teamwork-pics {
+  width: 100%;
+  height: auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.teamwork-pics figure {
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: calc(25% - 30px);
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+.teamwork-pics figure img {
+  max-width: 100%;
+  height: auto;
+}
+.teamwork-pics figure figcaption {
+  color: #262626;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+.teamwork-pics figure span {
+  color: #505050;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 35px;
+}
+.teamwork-pics .active img {
+  background-color: #262626;
+}
+.teamwork-pics .active figcaption {
+  color: #ff0036;
+}
+.teamwork-pics .active .teamwork-pics-txt {
+  border: 1px solid #262626;
+}
+.teamwork-pics-txt {
+  width: 100%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #e7e7e7;
+}
+.teamwork-bar {
+  width: 100%;
+  height: 210px;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.teamwork-bar-line {
+  width: 50%;
+  height: 1px;
+  background-color: #262626;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.teamwork-skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.teamwork-skills figure {
+  box-sizing: border-box;
+  margin-left: 15px;
+  margin-right: 15px;
+  word-wrap: break-word;
+  width: calc(16.666666666666668% - 30px);
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.teamwork-skills figure figcaption {
+  color: #262626;
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.teamwork-skills figure p {
+  color: #505050;
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+.teamwork-skills-round {
+  width: 145px;
+  height: 145px;
+  border: 3px solid #e74c3c;
+  border-radius: 50%;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Lato, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 95px;
+  margin-bottom: 20px;
+}
+.teamwork-skills-round span {
   color: #ff0036;
 }

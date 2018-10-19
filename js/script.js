@@ -30,4 +30,9 @@ jQuery(function($) {
         $(this).addClass("active"); 
         
     })
+
+    $('.teamwork-pics figure').on('click', function(){
+        $('.teamwork-pics figure').removeClass('active');
+        $(this).addClass("active");
+    })
 })
