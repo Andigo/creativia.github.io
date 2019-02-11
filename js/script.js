@@ -4,7 +4,9 @@ jQuery(function($) {
     $('.header-slider').slick({
     	infinite: true,
 		slidesToShow: 1,
-		slidesToScroll: 1
+		slidesToScroll: 1,
+        nextArrow: '<button class="header-slider-next"></button>',
+        prevArrow: '<button class="header-slider-prev"></button>'
   	});
 
     //Выпадающие окна в секции About    
