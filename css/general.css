@@ -1316,6 +1316,7 @@ button {
   margin-right: 15px;
   word-wrap: break-word;
   width: calc(25% - 30px);
+  position: relative;
   display: -moz-flex;
   display: -ms-flex;
   display: -o-flex;
@@ -1341,8 +1342,8 @@ button {
 .teamwork-pics figure:hover .teamwork-pics-txt {
   border-bottom: 1px solid #262626;
 }
-.teamwork-pics figure:hover img {
-  background-color: #262626;
+.teamwork-pics figure:hover .teamwork-pics-overlay {
+  opacity: 1;
 }
 .teamwork-pics figure img {
   max-width: 100%;
@@ -1350,6 +1351,7 @@ button {
 }
 .teamwork-pics figure figcaption {
   color: #262626;
+  transition: color 0.4s ease-in;
   font-family: Raleway, sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -1389,6 +1391,46 @@ button {
   -ms-flex-align: center;
   align-items: center;
   border: 1px solid #e7e7e7;
+  transition: border 0.4s ease-in;
+}
+.teamwork-pics-overlay {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 60%;
+  background-color: #262626;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.teamwork-pics-social {
+  background: url(../images/hexagon-geo.png) no-repeat;
+  width: 45px;
+  height: 45px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  transition: font-size 0.3s ease-in;
+}
+.teamwork-pics-social:nth-child(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.teamwork-pics-social i {
+  color: #ff0036;
+}
+.teamwork-pics-social:hover {
+  font-size: 26px;
 }
 .teamwork-bar {
   width: 100%;
